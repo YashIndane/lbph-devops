@@ -144,6 +144,8 @@ setenforce 0
 
 Upload a folder (the name of the folder should be name of person) , which has 100 images of that person's face.
 
+Code for getting the cropped face images -> [Link](https://github.com/YashIndane/face-cropper/blob/main/cropped_face_generator.py)
+
 When the folder is uploaded to this repository, this triggers the `Jenkins job` via a hook trigger. The repo is now cloned inside the job workspace. 
 
 The Jenkins job executes the `code_builder.sh` script. This script builds code to train the LBPH model and saves the models. Similarly the backend code for LBPH recognition is build and saved.
