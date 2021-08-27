@@ -2,6 +2,44 @@
 
 ![](https://raw.githubusercontent.com/YashIndane/repo-images/main/lbph-devops-flow-path.png)
 
+## Setup
+
+The following things need to be present on the VM where the job will run:
+
+1. git
+
+```
+yum install git -y
+```
+
+3. docker
+
+For RHEL VM ->
+
+Configure a repo for docker
+
+```
+[docker]
+baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/
+gpgcheck=0
+```
+
+```
+yum install docker-ce --nobest
+```
+
+For Amazon Linux ->
+
+```
+yum whatprovides docker
+```
+
+```
+yum install <version-name-from-the-list>
+```
+
+
+
 ## Working
 
 Upload a folder (the name of the folder should be name of person) , which has 100 images of that person's face.
