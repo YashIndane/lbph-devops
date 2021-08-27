@@ -120,6 +120,26 @@ To check if connected successfully run
 kubectl get nodes
 ```
 
+### docker and jenkins setup
+
+This has to be done so that Jenkins can run docker commands
+
+```
+systemctl start docker
+```
+
+```
+usermod -aG docker jenkins
+```
+
+```
+systemctl restart jenkins
+```
+
+```
+setenforce 0
+```
+
 ## Working
 
 Upload a folder (the name of the folder should be name of person) , which has 100 images of that person's face.
