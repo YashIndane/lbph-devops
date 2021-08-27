@@ -22,19 +22,19 @@ Install by :
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 
-### 2. aws cli
+### 3. aws cli
 
 ```
 yum install aws -y
 ```
 
-### 3. git
+### 4. git
 
 ```
 yum install git -y
 ```
 
-### 4. docker
+### 5. docker
 
 For RHEL VM ->
 
@@ -60,7 +60,7 @@ yum whatprovides docker
 yum install <version-name-from-the-list>
 ```
 
-### 5. cv2 
+### 6. cv2 
 
 ```
 pip3 install --upgrade pip setuptools wheel
