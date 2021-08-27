@@ -78,6 +78,8 @@ Select Build as Execute Shell ->
 
 ### Log in to the DockerHub account
 
+It is required to login from the Jenkins sever to the account on docker Hub where the new container-image will be pushed
+
 ```
 docker login -u <account-username> -p <account-password>
 ```
