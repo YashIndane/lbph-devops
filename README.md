@@ -8,13 +8,19 @@ The following things need to be present on the VM where the job will run:
 
 ### 1. Python
 
-### 2. git
+### 2. aws cli
+
+```
+yum install aws -y
+```
+
+### 3. git
 
 ```
 yum install git -y
 ```
 
-### 3. docker
+### 4. docker
 
 For RHEL VM ->
 
@@ -40,7 +46,7 @@ yum whatprovides docker
 yum install <version-name-from-the-list>
 ```
 
-### 4. cv2 
+### 5. cv2 
 
 ```
 pip3 install --upgrade pip setuptools wheel
@@ -76,9 +82,13 @@ Select Build as Execute Shell ->
 docker login -u <account-username> -p <account-password>
 ```
 
+### AWS login
 
+It is required to login from the Jenkins server with the user account that created the `EKS cluster` in AWS.
 
-
+```
+aws configure
+```
 
 ## Working
 
