@@ -6,13 +6,13 @@
 
 The following things need to be present on the VM where the job will run:
 
-1. git
+### 1. git
 
 ```
 yum install git -y
 ```
 
-2. docker
+### 2. docker
 
 For RHEL VM ->
 
@@ -38,7 +38,7 @@ yum whatprovides docker
 yum install <version-name-from-the-list>
 ```
 
-3. cv2 
+### 3. cv2 
 
 ```
 pip3 install --upgrade pip setuptools wheel
