@@ -66,6 +66,10 @@ pip3 install opencv-contrib-python
 
 ### Jenkins Job
 
+Select Build as Execute Shell ->
+
+![](https://raw.githubusercontent.com/YashIndane/repo-images/main/jenkins_build.png)
+
 ### Log in to the DockerHub account
 
 ```
