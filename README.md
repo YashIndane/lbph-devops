@@ -92,6 +92,20 @@ It is required to login from the Jenkins server with the user account that creat
 aws configure
 ```
 
+### Connecting to EKS cluster
+
+Configure a EKS cluster in AWS and connect to it from the Jenkins server
+
+```
+aws eks update-kubeconfig --region <region> --name  <cluster-name>
+```
+
+To check if connected successfully run 
+
+```
+kubectl get nodes
+```
+
 ## Working
 
 Upload a folder (the name of the folder should be name of person) , which has 100 images of that person's face.
