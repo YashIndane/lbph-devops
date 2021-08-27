@@ -12,7 +12,7 @@ The following things need to be present on the VM where the job will run:
 yum install git -y
 ```
 
-3. docker
+2. docker
 
 For RHEL VM ->
 
@@ -36,6 +36,26 @@ yum whatprovides docker
 
 ```
 yum install <version-name-from-the-list>
+```
+
+3. cv2 
+
+```
+pip3 install --upgrade pip setuptools wheel
+```
+
+```
+pip3 install opencv-python
+```
+
+```
+yum install opencv opencv-devel opencv-python
+```
+
+LBPH requires a library called `opencv-contrib-python`
+
+```
+pip3 install opencv-contrib-python
 ```
 
 
