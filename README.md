@@ -60,6 +60,20 @@ LBPH requires a library called `opencv-contrib-python`
 pip3 install opencv-contrib-python
 ```
 
+## Other Settings
+
+### Adding Webhhook
+
+### Jenkins Job
+
+### Log in to the DockerHub account
+
+```
+docker login -u <account-username> -p <account-password>
+```
+
+
+
 
 
 ## Working
