@@ -140,6 +140,12 @@ systemctl restart jenkins
 setenforce 0
 ```
 
+### Important Note
+
+Name the initial deployment name `face-app-deployment` and name of EKS cluster as `face-app`
+
+Initially any container-image can be used from this repo -> [Link](https://hub.docker.com/repository/docker/yashindane/lbphrecog)
+
 ## Working
 
 Upload a folder (the name of the folder should be name of person) , which has 100 images of that person's face.
