@@ -2,7 +2,9 @@
 
 ![](https://raw.githubusercontent.com/YashIndane/repo-images/main/lbph-devops-flow-path.png)
 
-Demo link -> [Link](https://www.linkedin.com/posts/yash-indane-aa6534179_devopstools-devops-awscloud-activity-6837735602532687872-NrS-)
+🎥 Demo link -> [Link](https://www.linkedin.com/posts/yash-indane-aa6534179_devopstools-devops-awscloud-activity-6837735602532687872-NrS-)
+
+📃 Project Certificate -> [Link](https://www.linkedin.com/posts/yash-indane-aa6534179_linuxworld-informatics-pvt-ltd-summer-project-activity-6846320944047357952-bJGm)
 
 ## Setup
 
