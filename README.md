@@ -17,25 +17,25 @@ The following things need to be present on the VM where the job will run:
 Download by :
 
 ```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+$ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
 
 Install by :
 
 ```
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+$ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 
 ### 3. aws cli
 
 ```
-yum install aws -y
+$ yum install aws -y
 ```
 
 ### 4. git
 
 ```
-yum install git -y
+$ yum install git -y
 ```
 
 ### 5. docker
@@ -51,37 +51,37 @@ gpgcheck=0
 ```
 
 ```
-yum install docker-ce --nobest
+$ yum install docker-ce --nobest
 ```
 
 For Amazon Linux ->
 
 ```
-yum whatprovides docker
+$ yum whatprovides docker
 ```
 
 ```
-yum install <version-name-from-the-list>
+$ yum install <version-name-from-the-list>
 ```
 
 ### 6. cv2 
 
 ```
-pip3 install --upgrade pip setuptools wheel
+$ pip3 install --upgrade pip setuptools wheel
 ```
 
 ```
-pip3 install opencv-python
+$ pip3 install opencv-python
 ```
 
 ```
-yum install opencv opencv-devel opencv-python
+$ yum install opencv opencv-devel opencv-python
 ```
 
 LBPH requires a library called `opencv-contrib-python`
 
 ```
-pip3 install opencv-contrib-python
+$ pip3 install opencv-contrib-python
 ```
 
 ## Other Settings
@@ -99,7 +99,7 @@ Select Build as Execute Shell ->
 It is required to login from the Jenkins sever to the account on docker Hub where the new container-image will be pushed
 
 ```
-docker login -u <account-username> -p <account-password>
+$ docker login -u <account-username> -p <account-password>
 ```
 
 ### AWS login
@@ -107,7 +107,7 @@ docker login -u <account-username> -p <account-password>
 It is required to login from the Jenkins server with the user account that created the `EKS cluster` in AWS.
 
 ```
-aws configure
+$ aws configure
 ```
 
 ### Connecting to EKS cluster
@@ -115,13 +115,13 @@ aws configure
 Configure a EKS cluster in AWS and connect to it from the Jenkins server
 
 ```
-aws eks update-kubeconfig --region <region> --name  <cluster-name>
+$ aws eks update-kubeconfig --region <region> --name  <cluster-name>
 ```
 
 To check if connected successfully run 
 
 ```
-kubectl get nodes
+$ kubectl get nodes
 ```
 
 ### docker and jenkins setup
@@ -129,19 +129,19 @@ kubectl get nodes
 This has to be done so that Jenkins can run docker commands
 
 ```
-systemctl start docker
+$ systemctl start docker
 ```
 
 ```
-usermod -aG docker jenkins
+$ usermod -aG docker jenkins
 ```
 
 ```
-systemctl restart jenkins
+$ systemctl restart jenkins
 ```
 
 ```
-setenforce 0
+$ setenforce 0
 ```
 
 ### Important Note
