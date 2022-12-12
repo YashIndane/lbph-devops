@@ -92,7 +92,7 @@ $ pip3 install opencv-contrib-python
 
 Select Build as Execute Shell ->
 
-![](https://raw.githubusercontent.com/YashIndane/repo-images/main/jenkins_build.png)
+![jenkins_build](https://user-images.githubusercontent.com/53041219/207033892-a734d32c-6990-4276-af8a-8ac14761089f.png)
 
 ### Log in to the DockerHub account
 
