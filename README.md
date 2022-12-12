@@ -1,6 +1,6 @@
 # lbph-devops
 
-![](https://raw.githubusercontent.com/YashIndane/repo-images/main/lbph-devops-flow-path.png)
+![lbph-readme](https://user-images.githubusercontent.com/53041219/207011037-07436fc3-1a7c-4200-9ba2-aa558781f4a1.png)
 
 🎥 Demo link -> [Link](https://www.linkedin.com/posts/yash-indane-aa6534179_devopstools-devops-awscloud-activity-6837735602532687872-NrS-)
 
